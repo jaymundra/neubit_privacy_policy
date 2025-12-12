@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neubit - Privacy Policy & Terms</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .documents {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .doc-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .doc-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .doc-card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .doc-card p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+        
+        .doc-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: opacity 0.3s ease;
+        }
+        
+        .doc-link:hover {
+            opacity: 0.9;
+        }
+        
+        .content-section {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            display: none;
+        }
+        
+        .content-section.active {
+            display: block;
+        }
+        
+        .content-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .content-section p {
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #555;
+        }
+        
+        .content-section h3 {
+            color: #764ba2;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+        }
+        
+        .back-btn {
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-bottom: 20px;
+            transition: opacity 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            opacity: 0.9;
+        }
+        
+        footer {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .last-updated {
+            color: #999;
+            font-size: 0.85em;
+            margin-top: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .documents {
+                grid-template-columns: 1fr;
+            }
+            
+            .content-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header id="header">
+            <h1>🔒 Neubit</h1>
+            <p class="subtitle">Privacy Policy & Terms and Conditions</p>
+        </header>
+        
+        <!-- Main Navigation -->
+        <div class="documents" id="mainNav">
+            <div class="doc-card">
+                <h2>📋 Privacy Policy</h2>
+                <p>Learn how we collect, use, and protect your personal information. Understand our data practices and your rights.</p>
+                <a href="javascript:void(0);" class="doc-link" onclick="showContent('privacy')">Read Privacy Policy</a>
+            </div>
+            
+            <div class="doc-card">
+                <h2>⚖️ Terms & Conditions</h2>
+                <p>Review the terms governing your use of the Neubit service, including user responsibilities and limitations.</p>
+                <a href="javascript:void(0);" class="doc-link" onclick="showContent('terms')">Read Terms & Conditions</a>
+            </div>
+        </div>
+        
+        <!-- Privacy Policy Content -->
+        <div class="content-section" id="privacyContent">
+            <button class="back-btn" onclick="showContent('home')">← Back to Home</button>
+            <h2>Privacy Policy</h2>
+            <p><strong>Last Updated: December 2025</strong></p>
+            
+            <h3>1. SCOPE</h3>
+            <p>This Notice applies to personal information processed through the Service, including mobile apps, websites, APIs, and related communications. It does not apply to third-party services that have their own notices.</p>
+            
+            <h3>2. CATEGORIES OF PERSONAL INFORMATION COLLECTED</h3>
+            <p><strong>(a) Identifiers and Account Data:</strong> name, email, username, password hash, authentication tokens, subscription status.</p>
+            <p><strong>(b) Contact and Preferences:</strong> language, locale, time zone, notification settings.</p>
+            <p><strong>(c) Payment and Billing Data:</strong> billing address, subscription details, limited payment metadata (processed by payment processors; we do not store full card numbers).</p>
+            <p><strong>(d) User Content:</strong> messages, voice inputs, activity attempts, feedback, attachments.</p>
+            <p><strong>(e) Device and Network Data:</strong> device identifiers, OS, app version, IP address, network information, carrier, screen resolution, device settings.</p>
+            
+            <h3>3. SOURCES OF INFORMATION</h3>
+            <p>We collect information directly from you (account setup, inputs), automatically via the Service (cookies/SDKs, device telemetry, session replay), from third-party processors (payments, analytics), and from referrals/attribution partners where permitted.</p>
+            
+            <h3>4. PURPOSES OF PROCESSING</h3>
+            <p>We process personal information to: provide, operate, and maintain the Service; authenticate users; secure accounts; prevent fraud, abuse, and security threats; process payments and subscriptions; improve and develop the Service and AI models; perform analytics, performance monitoring, debugging, and service optimization; personalize content and user experience; send service, transactional, and (with consent where required) marketing communications; comply with legal obligations and enforce terms.</p>
+            
+            <h3>5. YOUR RIGHTS AND CHOICES</h3>
+            <p>Depending on your jurisdiction, you may have rights to access, correct, delete, restrict, or object to processing; to data portability; and to withdraw consent where processing is based on consent. You may have rights to opt out of targeted advertising or certain sharing.</p>
+            
+            <p><strong>For the complete Privacy Policy, <a href="privacy_policy.txt" target="_blank">click here</a> to view the full document.</strong></p>
+        </div>
+        
+        <!-- Terms & Conditions Content -->
+        <div class="content-section" id="termsContent">
+            <button class="back-btn" onclick="showContent('home')">← Back to Home</button>
+            <h2>Terms and Conditions of Use</h2>
+            <p><strong>Last Updated: December 2025</strong></p>
+            
+            <h3>1. DEFINITIONS</h3>
+            <p>"Service" means the Neubit AI English tutor mobile and web application, websites, APIs, content, features, activities, communications, notifications, analytics, and related services.</p>
+            
+            <h3>2. ELIGIBILITY; MINORS AND PARENTAL CONSENT</h3>
+            <p>The Service is designed for users ages 5 and above. Children under 13 (or the age of digital consent in their jurisdiction) may use the Service only with verifiable parental or legal guardian consent and supervision.</p>
+            
+            <h3>3. ACCOUNT REGISTRATION AND SECURITY</h3>
+            <p>You must provide accurate, current, and complete information and maintain it. You are solely responsible for safeguarding your credentials and for all activities under your account. Promptly notify us of any unauthorized use.</p>
+            
+            <h3>4. LICENSE; RESTRICTIONS</h3>
+            <p>Subject to these Terms, we grant you a limited, revocable, non-exclusive, non-transferable, non-sublicensable license to access and use the Service for personal, non-commercial English-learning purposes.</p>
+            <p><strong>You shall not:</strong> reverse engineer, decompile, or disassemble the Service; circumvent technical or access controls; rent, lease, or sell the Service; use the Service to develop competing products; interfere with security; introduce malware; or misuse the Service in violation of applicable law.</p>
+            
+            <h3>5. AI-POWERED OUTPUTS; CRITICAL DISCLAIMERS</h3>
+            <p>The Service uses artificial intelligence that may generate outputs that are incorrect, incomplete, offensive, or inappropriate. DO NOT rely on the Service for medical, legal, financial, emergency, or other professional advice.</p>
+            
+            <h3>6. PAYMENT, SUBSCRIPTIONS, AND AUTO-RENEWAL</h3>
+            <p>Paid subscriptions may auto-renew at the then-current rate until canceled. By providing a payment method, you authorize recurring charges (including taxes/fees) until you cancel.</p>
+            
+            <p><strong>For the complete Terms and Conditions, <a href="terms_and_conditions.txt" target="_blank">click here</a> to view the full document.</strong></p>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Neubit. All rights reserved.</p>
+            <p class="last-updated">Last updated: December 12, 2025</p>
+        </footer>
+    </div>
+    
+    <script>
+        function showContent(section) {
+            // Hide all content
+            document.getElementById('privacyContent').classList.remove('active');
+            document.getElementById('termsContent').classList.remove('active');
+            document.getElementById('mainNav').style.display = 'grid';
+            
+            // Show selected content
+            if (section === 'privacy') {
+                document.getElementById('privacyContent').classList.add('active');
+                document.getElementById('mainNav').style.display = 'none';
+            } else if (section === 'terms') {
+                document.getElementById('termsContent').classList.add('active');
+                document.getElementById('mainNav').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

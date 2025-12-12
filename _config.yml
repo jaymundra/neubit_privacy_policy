@@ -1,0 +1,15 @@
+title: Neubit Privacy Policy & Terms
+description: Online hosting of Neubit's Privacy Policy and Terms and Conditions
+author: Neubit
+url: https://jaymundra.github.io/neubit_privacy_policy
+
+# GitHub Pages Settings
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
+
+# Exclude files from being generated
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
